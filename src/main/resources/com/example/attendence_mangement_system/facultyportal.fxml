@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.attendence_mangement_system.DatabaseController">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="279.0" style="-fx-background-color: BLUE;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="WHITE" layoutX="60.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome">
+               <font>
+                  <Font name="System Bold Italic" size="38.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="16.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Faculty Member" wrappingWidth="278.24365234375">
+               <font>
+                  <Font name="System Bold Italic" size="35.0" />
+               </font>
+            </Text>
+         </children></AnchorPane>
+   </left>
+   <right>
+      <AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="298.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="takeattendence" layoutX="53.0" layoutY="56.0" mnemonicParsing="false" onAction="#ontakeattendencebuttonclick" prefHeight="74.0" prefWidth="210.0" style="-fx-background-color: blue;" text="Take Attendence" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font></Button>
+            <Button fx:id="faculty" layoutX="51.0" layoutY="172.0" mnemonicParsing="false" onAction="#onstopbuttonclick" prefHeight="71.0" prefWidth="215.0" style="-fx-background-color: blue;" text="Manual Attendence" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Button>
+            <ImageView fitHeight="51.0" fitWidth="32.0" layoutX="12.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+   </right>
+   <top>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="               Faculty Portal" wrappingWidth="599.3850432634354" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="42.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </Text>
+   </top>
+</BorderPane>

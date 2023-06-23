@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="388.0" prefWidth="670.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.attendence_mangement_system.DatabaseController">
+   <columnConstraints>
+      <ColumnConstraints maxWidth="83.8" minWidth="26.800020217895508" prefWidth="26.800020217895508" />
+      <ColumnConstraints maxWidth="113.19997978210449" minWidth="50.400020599365234" prefWidth="113.19997978210449" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="397.20001220703125" minWidth="10.0" prefWidth="185.6" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="627.2000244140625" minWidth="0.0" prefWidth="152.00002441406252" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="627.2000244140625" minWidth="10.0" prefWidth="191.99997558593748" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints maxHeight="79.99999160766602" minHeight="10.0" prefHeight="46.6" />
+      <RowConstraints maxHeight="79.99999160766602" minHeight="10.0" prefHeight="60.59999389648438" />
+      <RowConstraints maxHeight="211.2" minHeight="10.0" prefHeight="40.600006103515625" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="338.40000610351564" minHeight="10.0" prefHeight="61.39997558593751" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="372.2000244140625" minHeight="10.0" prefHeight="43.000024414062494" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="320.6000122070312" minHeight="10.0" prefHeight="50.99998779296874" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="320.6000122070312" minHeight="10.0" prefHeight="87.80000000000001" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="            DELETE STUDENT" wrappingWidth="335.60731506347656" GridPane.columnIndex="2">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Enter id-&gt;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <TextField fx:id="deleteid" onAction="#ondeletestudentbuttonclick" prefHeight="26.0" prefWidth="162.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <Button fx:id="deletestudentbutton" mnemonicParsing="false" onAction="#ondeletestudentbuttonclick" style="-fx-background-color: BLACK;" text="DELETE" textFill="#ff1111" GridPane.columnIndex="3" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="30.0" />
+         </GridPane.margin>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</GridPane>
