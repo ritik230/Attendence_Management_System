@@ -7,8 +7,8 @@ public class Jdbc {
 
         // Replace below database url, username and password with your actual database credentials
         private static final String DATABASE_URL = "jdbc:mysql://localhost:3306/attendence_management_system?useSSL=false&allowPublicKeyRetrieval=true";
-        private static final String DATABASE_USERNAME = "root";
-        private static final String DATABASE_PASSWORD = "Ritik@1234";
+        private static final String DATABASE_USERNAME = ""
+        private static final String DATABASE_PASSWORD = "";
         private static final String INSERT_QUERY = "drop table login";
 
 
